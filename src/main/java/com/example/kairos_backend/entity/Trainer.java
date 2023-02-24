@@ -1,4 +1,4 @@
-package com.example.kairos_backend.trainer.entity;
+package com.example.kairos_backend.entity;
 import jakarta.persistence.*;
 
 @Entity

@@ -1,7 +1,7 @@
-package com.example.kairos_backend.trainer.service;
+package com.example.kairos_backend.service;
 
-import com.example.kairos_backend.trainer.repository.TrainerRepository;
-import com.example.kairos_backend.trainer.entity.Trainer;
+import com.example.kairos_backend.repository.TrainerRepository;
+import com.example.kairos_backend.entity.Trainer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
