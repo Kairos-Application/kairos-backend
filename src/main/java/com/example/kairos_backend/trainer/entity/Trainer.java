@@ -11,6 +11,7 @@ public class Trainer {
             initialValue = 0,
             allocationSize = 1
     )
+
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
             generator = "trainer_sequence"

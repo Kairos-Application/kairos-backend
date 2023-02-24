@@ -16,6 +16,7 @@ public class TrainerService {
     public TrainerService(TrainerRepository trainerRepository) {
         this.trainerRepository = trainerRepository;
     }
+
     public List<Trainer> getTrainer(){
         return trainerRepository.findAll();
     }

@@ -18,6 +18,7 @@ public class TrainerController {
     public TrainerController(TrainerService trainerService){
         this.trainerService = trainerService;
     }
+
     @GetMapping
     public List<Trainer> getTrainer(){
         return trainerService.getTrainer();
