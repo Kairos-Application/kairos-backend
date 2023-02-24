@@ -18,7 +18,7 @@ public class Trainer {
     )
     private Long id;
     private String name;
-    private String email_address;
+    private String email;
     private String phone;
     private int age;
     private String city;
@@ -26,10 +26,10 @@ public class Trainer {
     private int max_travel_distance;
     private String client_id;
 
-    public Trainer(Long id, String name, String email_address, String phone, int age, String city, String state, int max_travel_distance, String client_id) {
+    public Trainer(Long id, String name, String email, String phone, int age, String city, String state, int max_travel_distance, String client_id) {
         this.id = id;
         this.name = name;
-        this.email_address = email_address;
+        this.email = email;
         this.phone = phone;
         this.age = age;
         this.city = city;
@@ -38,9 +38,9 @@ public class Trainer {
         this.client_id = client_id;
     }
 
-    public Trainer(String name, String email_address, String phone, int age, String city, String state, int max_travel_distance, String client_id) {
+    public Trainer(String name, String email, String phone, int age, String city, String state, int max_travel_distance, String client_id) {
         this.name = name;
-        this.email_address = email_address;
+        this.email = email;
         this.phone = phone;
         this.age = age;
         this.city = city;
@@ -49,9 +49,7 @@ public class Trainer {
         this.client_id = client_id;
     }
 
-    public Trainer() {
-
-    }
+    public Trainer() {}
 
     public Long getId() {
         return id;
@@ -69,12 +67,12 @@ public class Trainer {
         this.name = name;
     }
 
-    public String getEmail_address() {
-        return email_address;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmail_address(String email_address) {
-        this.email_address = email_address;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPhone() {
@@ -130,7 +128,7 @@ public class Trainer {
         return "Trainer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", email_address='" + email_address + '\'' +
+                ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", age=" + age +
                 ", city='" + city + '\'' +
