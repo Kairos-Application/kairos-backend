@@ -1,7 +1,7 @@
-package com.example.kairos_backend.controller;
+package com.example.kairos.controller;
 
-import com.example.kairos_backend.service.TrainerService;
-import com.example.kairos_backend.entity.Trainer;
+import com.example.kairos.service.TrainerService;
+import com.example.kairos.model.TrainerProfile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,13 +18,13 @@ public class TrainerController {
     }
 
     @GetMapping
-    public List<Trainer> getTrainers(){
+    public List<TrainerProfile> getTrainers(){
         return trainerService.getTrainers();
     }
 
     @PostMapping
-    public void saveTrainer(@RequestBody Trainer trainer){
-        trainerService.saveTrainer(trainer);
+    public void saveTrainer(@RequestBody TrainerProfile trainerProfile){
+//        trainerService.saveTrainer(trainerProfile);
     }
 
     @DeleteMapping(path = "{trainerId}")

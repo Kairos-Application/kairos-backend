@@ -1,4 +1,4 @@
-package com.example.kairos_backend;
+package com.example.kairos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

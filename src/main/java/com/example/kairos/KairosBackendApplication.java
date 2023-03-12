@@ -1,4 +1,4 @@
-package com.example.kairos_backend;
+package com.example.kairos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
