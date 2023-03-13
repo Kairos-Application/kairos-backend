@@ -27,17 +27,17 @@ public class TrainerController {
 //        trainerService.saveTrainer(trainerProfile);
     }
 
-    @DeleteMapping(path = "{trainerId}")
-    public void delTrainer(@PathVariable("trainerId") Long trainerId){
-        trainerService.delTrainer(trainerId);
-    }
+//    @DeleteMapping(path = "{trainerId}")
+//    public void delTrainer(@PathVariable("trainerId") Long trainerId){
+//        trainerService.delTrainer(trainerId);
+//    }
 
-    @PutMapping(path = "{trainerId}")
-    public void updateTrainer(
-            @PathVariable("trainerId") Long trainerId,
-            @RequestParam(required = true) String name,
-            @RequestParam(required = true) String email
-    ){
-        trainerService.updateTrainer(trainerId, name, email);
-    }
+//    @PutMapping(path = "{trainerId}")
+//    public void updateTrainer(
+//            @PathVariable("trainerId") Long trainerId,
+//            @RequestParam(required = true) String name,
+//            @RequestParam(required = true) String email
+//    ){
+//        trainerService.updateTrainer(trainerId, name, email);
+//    }
 }
