@@ -19,8 +19,13 @@ public class BidController {
 
     @CrossOrigin
     @PutMapping(path = "/bid/insert")
-    public void insertBid(@RequestBody BidInsert bidInsert) throws Exception {
+    public void insertBid(@RequestBody BidInsert bidInsert) {
         bidService.insertBid(bidInsert);
+    }
+
+    @CrossOrigin
+    @PutMapping(path = "/test/upload")
+    public void uploadInputFile() throws Exception {
         inputFileService.createAndUploadFile();
     }
 }

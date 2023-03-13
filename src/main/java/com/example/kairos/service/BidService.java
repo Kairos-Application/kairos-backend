@@ -8,16 +8,12 @@ import com.example.kairos.pojo.BidInsert;
 import com.example.kairos.pojo.Timings;
 import com.example.kairos.repository.BidRepository;
 import com.example.kairos.repository.BidSessionTimingRepository;
-import com.example.kairos.repository.TrainerRepository;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.PersistenceContextType;
+import com.example.kairos.repository.TrainerProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BidService {
@@ -29,7 +25,7 @@ public class BidService {
     private BidSessionTimingRepository bidSessionTimingRepository;
 
     @Autowired
-    private TrainerRepository trainerRepository;
+    private TrainerProfileRepository trainerProfileRepository;
 
     public void insertBid(BidInsert bidInsert) {
         ClientProfile clientProfile = new ClientProfile();

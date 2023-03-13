@@ -5,7 +5,7 @@ import java.util.List;
 
 public class InputFileFormat {
 
-    private Date weekStartDate;
+    private String weekStartDate;
 
     private Integer trainerId;
 
@@ -27,7 +27,7 @@ public class InputFileFormat {
 
     public InputFileFormat() {}
 
-    public InputFileFormat(Date weekStartDate, Integer trainerId, Integer trainerHomeLocation,
+    public InputFileFormat(String weekStartDate, Integer trainerId, Integer trainerHomeLocation,
                            List<Integer> trainerGymLocations, List<DayStartEndTime> timesNotAvailable,
                            Integer maxClientsAtOnce, Boolean trainAtClientHome, Boolean trainOnline,
                            List<ClientInfo> clientList, DistanceMatrix distanceMatrix) {
@@ -43,11 +43,11 @@ public class InputFileFormat {
         this.distanceMatrix = distanceMatrix;
     }
 
-    public Date getWeekStartDate() {
+    public String getWeekStartDate() {
         return weekStartDate;
     }
 
-    public void setWeekStartDate(Date weekStartDate) {
+    public void setWeekStartDate(String weekStartDate) {
         this.weekStartDate = weekStartDate;
     }
 
