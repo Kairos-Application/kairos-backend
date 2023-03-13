@@ -24,7 +24,7 @@ public class BidController {
     }
 
     @CrossOrigin
-    @PutMapping(path = "/test/upload")
+    @GetMapping(path = "/test/upload")
     public void uploadInputFile() throws Exception {
         inputFileService.createAndUploadFile();
     }

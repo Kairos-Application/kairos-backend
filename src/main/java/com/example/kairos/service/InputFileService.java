@@ -58,6 +58,8 @@ public class InputFileService {
 
         awsService.upload(file);
 
+        file.delete();
+
 //        Date date = new Date();
 //        Calendar c = Calendar.getInstance();
 //        c.setTime(date);
